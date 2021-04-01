@@ -1,0 +1,44 @@
+// -------------------------------
+//     FORMS VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $form-field__font-size: 1.6rem;
+
+    // *--------- COLORS ---------*
+    $form-field__text-color: rgba(19,39,67,0.5);
+    $form-field__border-color: #333333;
+    $form-field__background-color: #fff;
+
+// -------------------------------
+//     FORMS STYLES
+// -------------------------------
+
+.section-contact__col-form {
+    width: 100%;
+    max-width: 54rem;
+}
+
+.section-contact__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-fieldset {
+    width: 100%;
+    margin-bottom: 2.4rem;
+
+    &--50 {
+        width: calc(50% - 1.5rem);
+    }
+}
+
+.form-field {
+    width: 100%;
+    padding: 2rem 3rem;
+    border: 1px $form-field__border-color solid;
+    border-radius: .6rem;
+    background-color: $form-field__background-color;
+    color: $form-field__text-color;
+}

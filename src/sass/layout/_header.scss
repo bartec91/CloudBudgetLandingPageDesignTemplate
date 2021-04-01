@@ -1,0 +1,124 @@
+// -------------------------------
+//     HEADER VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+
+// ----------------------------
+//     HEADER STYLES
+// ----------------------------
+
+.header {
+    font-size: $font-size;
+    color: $second__color;
+
+    background: url('../img/slide-1.png') no-repeat;
+    background-size: cover;
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include gradient__color--bg-orange;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+        &__toggler {
+            display: none;
+        }
+
+    &__logo {
+        margin-right: auto;
+
+        color: $second__color;
+        font-size: $font-size--large;
+        font-weight: $font-weight--bold;
+
+        &:hover {
+            color: $second__color;
+        }
+
+        i {
+            margin-right: 1rem;
+        }
+    }
+
+    &__main {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            padding: 15rem 0;
+
+            z-index: 1;
+            font-size: $font-size--x-large;
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    &__heading {
+        flex-basis: 100%;
+
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 3.9rem 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .header {
+        &__container {
+            padding: 1.5rem;
+        }
+
+        &__main-wrapper {
+            padding: 8rem 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        &__top {
+            flex-wrap: wrap;
+        }
+
+        &__toggler {
+            display: block;
+            background: none;
+            border: 1px solid $second__color;
+            color: $second__color;
+            font-size: $font-size--large;
+        }
+
+        &__main-wrapper {
+            padding: 3rem 0;
+            font-size: $font-size--large;
+        }
+
+        &__heading {
+            font-size: $font-size--x-large;
+        }
+    }
+}

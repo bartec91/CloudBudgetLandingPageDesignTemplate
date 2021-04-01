@@ -1,0 +1,46 @@
+// -------------------------------
+//     BUTTONS VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+
+// -------------------------------
+//     BUTTONS STYLES
+// -------------------------------
+
+.button {
+    display: inline-block;
+    padding: 1.6rem 5.2rem;
+    border: none;
+    border-radius: .6rem;
+    background: $second__color;
+
+    cursor: pointer;
+
+    font-size: $font-size;
+    font-weight: $font-weight--bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: $third__color;
+
+    @extend %transitionAll;
+
+    &:hover {
+        background-color: $third__color;
+        color: $second__color;
+    }
+}
+
+.button__form {
+    padding: 1.6rem 3.4rem;
+    font-weight: $font-weight;
+    color: $second__color;
+    background: $third__color;
+
+    &:hover {
+        color: $third__color;
+        background-color: $second__color;
+    }
+}

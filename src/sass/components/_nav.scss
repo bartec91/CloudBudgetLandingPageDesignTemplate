@@ -1,0 +1,87 @@
+// -------------------------------
+//     NAV VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+
+// ----------------------------
+//     NAV STYLES
+// ----------------------------
+
+.nav {
+    display: flex;
+    align-content: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        text-align: center;
+    }
+
+        &__item {
+            display: flex;
+            margin: 0 2.5rem;
+            position: relative;
+
+            list-style: none;
+
+            &--first {
+                margin-left: 0;
+            }
+
+            &--last {
+                margin-right: 0;
+            }
+        }
+
+            &__link {
+                padding: 5.8rem 0;
+                color: $second__color;
+                font-size: $font-size;
+                font-weight: $font-weight;
+
+                @extend %transitionAll;
+
+                &--active,
+                &:hover {
+                    color: $second__color;
+                    font-weight: $font-weight--bold;
+                }
+            }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        max-height: 0;
+        flex-basis: 100%;
+
+        overflow: hidden;
+        opacity: 0;
+        margin: 2rem auto;
+        transition: all .3s ease-out;
+
+        &__list {
+            flex-basis: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__item {
+            margin: 0;
+        }
+
+        &__link {
+            padding: 1rem;
+        }
+    }
+
+    .nav.collapse {
+        overflow: visible;
+        max-height: 100%;
+        opacity: 1;
+    }
+}
