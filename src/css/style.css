@@ -264,7 +264,8 @@ body {
   width: 100vw;
   max-width: 100vw;
   top: 0;
-  background-color: #ED4C5C;
+  padding: 1.5rem 3rem;
+  background-color: rgba(237, 76, 92, 0.7);
   z-index: 5;
   animation: .4s forwards ease-in-out scale-effect-in;
 }
@@ -383,6 +384,10 @@ body {
 .nav__link--active, .nav__link:hover {
   color: #fff;
   font-weight: 700;
+}
+
+.header__top--fixed .nav__link {
+  padding: 1.5rem 0;
 }
 
 @media only screen and (max-width: 768px) {

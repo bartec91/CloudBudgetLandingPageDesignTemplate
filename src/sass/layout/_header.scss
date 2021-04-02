@@ -42,7 +42,9 @@
             width: 100vw;
             max-width: 100vw;
             top: 0;
-            background-color: $third__color;
+            padding: 1.5rem 3rem;
+
+            background-color: $third__color--transparency;
             z-index: 5;
             animation: .4s forwards ease-in-out scale-effect-in;
         }
