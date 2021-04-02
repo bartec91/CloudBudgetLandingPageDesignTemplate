@@ -4,7 +4,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         clean: {
             dev: {
-                src: ["src/css/*", "!src/js/app/scripts.js", "!src/css/fontawesome.min.css", "!src/css/solid.min.css", "!src/css/brands.min.css", "!src/css/webfonts"]
+                src: ["src/css/*", "src/js/app/scripts.js", "!src/css/fontawesome.min.css", "!src/css/solid.min.css", "!src/css/brands.min.css", "!src/css/webfonts"]
             },
             prod: {
                 src: ["build/**"]
